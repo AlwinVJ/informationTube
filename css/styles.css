@@ -1,0 +1,335 @@
+html,
+body {
+    font-family: "Roboto", serif;
+}
+
+.round-btn {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    border-radius: 50px;
+    font-size: 20px;
+    padding: 0px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.round-btn:hover {
+    background-color: #ccc;
+}
+
+/* Menu button */
+.round-btn-1 {
+    border-radius: 50px;
+    font-size: 24px;
+    padding: 4px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.round-btn-1:hover {
+    background-color: #ccc;
+}
+
+
+
+.round-btn-2 {
+    border: 1px solid #ddd;
+    background-color: #eee;
+    border-radius: 50px;
+    font-size: 16.5px;
+    padding: 2px 14px 4px 14px;
+    width: auto;
+    height: 40px;
+    text-align: center;
+}
+
+.round-btn-2:hover {
+    background-color: #ccc;
+}
+
+.round-btn-2 i {
+    font-size: 25px;
+    position: relative;
+    top: 4.3px;
+    right: 3px;
+}
+
+.yt-logo {
+    width: 130px;
+    padding-bottom: 4px;
+}
+
+.yt-search-bar .form-control {
+    border-radius: 50px;
+    border: 1px solid #b1abab;
+}
+
+.yt-search-bar .input-group-text {
+    border-radius: 50px;
+    border: 1px solid #b1abab;
+    font-size: 24px;
+    background-color: #F8F8F8;
+}
+
+.yt-sidebar {
+    position: fixed;
+    border-right: 1px solid #ddd;
+    width: 250px;
+    height: 100vh;
+    padding: 10px;
+    overflow-y: hidden;
+    overscroll-behavior: contain;
+}
+
+.yt-sidebar:hover {
+    scrollbar-width: thin;
+    overflow-y: auto;
+}
+
+.yt-sidebar-mini {
+    width: 70px;
+}
+
+.yt-sidebar-collapsed {
+    padding-left: 70px !important;
+}
+
+.yt-content {
+    padding-left: 250px;
+}
+
+.yt-sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+
+.yt-sidebar ul li {
+    list-style: none;
+    margin-bottom: 6px;
+}
+
+.yt-sidebar ul li a {
+    display: block;
+    border-radius: 10px;
+    padding: 8px;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 6px;
+}
+
+.yt-sidebar ul li a i {
+    font-size: 20px;
+    margin-right: 12px;
+    position: relative;
+    top: 3px;
+}
+
+.yt-sidebar ul li a.active {
+    background-color: #eee;
+}
+
+.yt-sidebar .copyrights{
+    font-size: 12px;
+    margin-right: 10px;
+    padding-bottom: 55px;
+    overflow-x: hidden;
+}
+
+.imageicons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* space between image and text */
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+
+.menu-icon {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.copyrights {
+    font-size: small;
+    justify-content: space-around;
+}
+
+.ytprivacy {
+    font-size: small;
+    padding-bottom: 70px;
+    justify-content: space-around;
+}
+
+.yt-video-area {
+    margin-top: 20px;
+}
+
+.yt-video-card {
+    margin-bottom: 30px;
+}
+
+.yt-video-card:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.yt-video-card iframe {
+    border-radius: 14px;
+}
+
+.yt-content-card iframe:hover {
+    border-radius: 1px;
+}
+
+.yt-video-card .video-title {
+    font-size: 16px;
+    color: #000;
+    padding-left: 8px;
+}
+
+.yt-video-card .round-btn{
+    margin-left: 6px;
+}
+
+.yt-video-card .channel-name {
+    font-size: 14px;
+    color: #606060;
+    padding-top: 2px;
+    margin-bottom: 0;
+    padding-left: 8px;
+}
+
+.yt-video-card .views-years {
+    font-size: 14px;
+    color: #606060;
+    padding-left: 8px;
+}
+
+.yt-video-card .placedots {
+    position: relative;
+    padding-left: 60px;
+    font-size: 24px;
+    color: #000;
+}
+
+.yt-badge-area {
+    /* display: flex; */
+    margin-bottom: 10px;
+    /* overflow-x: scroll; */
+}
+
+.yt-badge-area a {
+    display: inline-block;
+    border-radius: 10px;
+    padding: 8px 10px;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 6px;
+    margin-right: 10px;
+    background-color: #eee;
+    font-size: 13.5px;
+    font-weight: 600;
+    /* white-space: nowrap; */
+}
+
+.yt-badge-area a:hover {
+    background-color: #000;
+    color: #eee
+}
+
+.yt-shorts-area {
+    margin-bottom: 50px;
+}
+
+.yt-shorts-card iframe {
+    border-radius: 14px;
+}
+
+.yt-shorts-card:hover {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+}
+
+.yt-shorts-card .video-title {
+    font-size: 14px;
+    color: #000;
+    padding-left: 8px;
+    justify-content: space-evenly;
+}
+
+.yt-shorts-card .channel-name {
+    font-size: 14px;
+    color: #606060;
+    padding-top: 2px;
+    margin-bottom: 0;
+    padding-left: 8px;
+}
+
+.yt-shorts-card .views-years {
+    font-size: 14px;
+    color: #606060;
+    padding-left: 8px;
+}
+
+.yt-shorts-card .placedots {
+    position: relative;
+    padding-left: 20px;
+    font-size: 24px;
+    color: #000;
+}
+
+.yt-badge-area .arrowbutton {
+    position: absolute;
+    margin-left: 4px;
+    font-size: 22px;
+    z-index: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+/* Sidebar collapsing styling */
+.yt-sidebar-mini ul li a{
+    display: block;
+    font-size: 0px;
+    text-align: center;
+}
+
+.yt-sidebar-mini .collapsehide{
+    display: none;
+}
+
+.yt-sidebar-mini .copyrights{
+    display: none;
+}
+
+.material-symbols-outlined {
+    position: relative;
+    font-size: 22px;
+    margin-right: 8.6px;
+    vertical-align: middle;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+.loading-bar{
+    font-size: large;
+    background-color: #f5f5f5;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 8px;
+    margin-bottom: 0;
+}
+
+.loading-bar p{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

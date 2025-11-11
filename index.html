@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>InfoTube</title>
+  <link rel="icon" href="images\favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="css\styles.css">
+</head>
+
+<body>
+  <!-- Top navigation bar -->
+  <div class="yt-navbar p-2 sticky-top bg-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <button id="sidebarBtn1" class="btn round-btn-1"><i class='bx  bx-menu'></i> </button>
+          <img src="images\info_icon.png" class="yt-logo" alt="YouTube icon" />
+        </div>
+        <div class="col-md-6">
+          <div class="yt-search-bar d-flex">
+            <div class="input-group">
+              <input type="search" class="form-control" placeholder="Search" />
+              <button class="input-group-text" id="basic-addon2"><i class="bx bx-search ps-2 pe-1"></i></button>
+            </div>
+            <button class="btn round-btn ms-3"><i class='bx  bx-microphone bx-sm mt-1'></i></button>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="text-end">
+            <button class="btn round-btn"><i class='bx  bx-bell mt-1'></i></button>
+            <button class="btn round-btn-2"><i class="bx bx-plus"></i>Create</button>
+            <button class="btn round-btn"><i class='bx  bx-user mt-1'></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main content Area -->
+  <div class="yt-main-area">
+
+    <!-- Sidebar -->
+    <div id="ytsidebar" class="yt-sidebar mt-2">
+      <ul>
+        <li><a class="active" href=""><i class='bx bx-home-alt bx-flip-horizontal bx-invert-opacity'></i>Home</a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              stylus_laser_pointer
+            </span></i>Info</a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              subscriptions
+            </span>Subscriptions</a></li>
+        <li>
+          <hr>
+        </li>
+        <div></div>
+        <li class="collapsehide"><a href="" class="fw-bold">You<i class='bx bx-chevron-right'></i></a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              history
+            </span>History</a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              playlist_play
+            </span></i>Playlists</a></li>
+        <li><a href=""><i class='bx bx-time'></i>Watch later</a></li>
+        <li><a href=""><i class='bx bx-like'></i>Liked Videos</a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              arrow_downward
+            </span></i>Downloads</a></li>
+        <li>
+          <hr>
+        </li>
+
+        <li class="collapsehide"><a href="" class="fw-bold">Subscriptions<i class='bx bx-chevron-right'></i></a></li>
+        <li><a href=""><i class='bx bxs-user'></i>Channel 1</a></li>
+        <li><a href=""><i class='bx bxs-user'></i>Channel 2</a></li>
+        <li><a href=""><i class='bx bxs-user'></i>Channel 3</a></li>
+        <li>
+          <hr>
+        </li>
+
+        <li><a href="" class="fw-bold">Explore</a></li>
+        <li><a href=""><i class='bx bx-shopping-bag'></i>Info Materials</a></li>
+        <li><a href=""><i class='bx bxs-playlist'></i>Study Music</a></li>
+        <li><a href=""><i class='bx bxs-movie'></i>Documentaries</a></li>
+        <li><a href=""><i class='bx bx-broadcast'></i>Live</a></li>
+        <li><a href=""><i class='bx bx-joystick'></i>Puzzles</a></li>
+        <li><a href=""><i class='bx bx-news'></i>News</a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              school
+            </span>Courses</a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              podcasts
+            </span>Podcasts</a></li>
+        <li>
+          <hr>
+        </li>
+
+        <li><a href="" class="fw-bold">More from YouTube</a></li>
+        <li class="imageicons">
+          <a href="#"">
+            <img src=" images\info_premium.png" alt="InfoTube Premium" class="menu-icon">
+            InfoTube Premium
+          </a>
+        </li>
+        <li class="imageicons">
+          <a href="#"">
+            <img src=" images\info_premium.png" alt="InfoTube Kids" class="menu-icon">
+            InfoTube Kids
+          </a>
+        </li>
+        <li>
+          <hr>
+        </li>
+
+        <li><a href=""><i class='bx bx-cog bx-invert-opacity'></i> Settings</a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              flag_2
+            </span></i>Report History</a></li>
+        <li><a href=""><i class='bx bx-help-circle bx-invert-opacity'></i>Help</a></li>
+        <li><a href=""><span class="material-symbols-outlined">
+              chat_info
+            </span></i>Send Feedback</a></li>
+        <li>
+          <hr>
+        </li>
+      </ul>
+      <pre class="copyrights fw-bold">About Press Copyright 
+Contact us Creators 
+Advertise Developers
+
+Terms Privacy Policy & Safety
+How InfoTube work
+Test new features
+
+© 2025 Informer LTD</pre>
+    </div>
+    
+    <!-- Youtube's main content area -->
+    <div id="ytcontentarea" class="yt-content">
+      <div class="p-3">
+        <div class="p-3 position-relative">
+          <div class="yt-badge-area">
+            <a href="">All</a>
+            <a href="">News</a>
+            <a href="">Satire</a>
+            <a href="">Mohanlal</a>
+            <a href="">Music</a>
+            <a href="">Malayalam Cinema</a>
+            <a href="">AI</a>
+            <a href="">Podcasts</a>
+            <a href="">Live</a>
+            <a href="">Computer Programming</a>
+            <a href="">Mixes</a>
+            <a href="">Gaming</a>
+            <a href="">AI</a>
+            <a href="">Football</a>
+            <a href="" class="arrowbutton"><i class="bx bx-chevron-right"></i></a>
+          </div>
+        </div>
+        <!-- First Video area -->
+        <div class="yt-video-area">
+          <div class="container">
+            <div class="row">
+              <!-- Video 1 -->
+              <div class="col-md-4">
+                <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw&list=PLZPZq0r_RZOPP5Yjt6IqgytMRY5uLt4y3"
+                  style="text-decoration: none;">
+                  <div class="yt-video-card mt-2">
+                    <iframe class="w-100" height="210"
+                      src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=--KeSvIxvYooScSf" title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                    <div class="d-flex mt-2">
+                      <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                      <div>
+                        <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+
+                        <p class="channel-name">Channel Name</p>
+                        <label class="views-years">No of Views</label>.<label class="views-years">No years ago</label>
+                      </div>
+                      <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Video 2 -->
+              <div class="col-md-4">
+                <a href="https://youtu.be/b4hJWG8qjPU?si=rf3oxxEQirJU3nZh" style="text-decoration: none;">
+                  <div class="yt-video-card mt-2">
+                    <iframe class="w-100" height="210"
+                      src="https://www.youtube.com/embed/b4hJWG8qjPU?si=8xRhVMf4ISoanRBp" title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="d-flex mt-2">
+                      <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                      <div>
+                        <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                        <p class="channel-name">Channel Name</p>
+                        <label class="views-years">No of Views</label>.<label class="views-years">No years ago</label>
+                      </div>
+                      <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <!-- Video 3 -->
+              <div class="col-md-4">
+                <a href="https://youtu.be/ZY2_UyOUL5Q?si=WKVFYEqvbSR1NNdg" style="text-decoration: none;">
+                  <div class="yt-video-card mt-2">
+                    <iframe class="w-100" height="210"
+                      src="https://www.youtube.com/embed/ZY2_UyOUL5Q?si=qV0WfpsVs7AfYCYQ" title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <div class="d-flex mt-2">
+                      <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                      <div>
+                        <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                        <p class="channel-name">Channel Name</p>
+                        <label class="views-years">No of Views</label>.<label class="views-years">No years ago</label>
+                      </div>
+                      <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- First shorts area -->
+          <div class="yt-shorts-area">
+            <div class="container">
+              <div class="shortsicon">
+                <img src="images\shorts_icon.png" alt="" height="55">
+              </div>
+              <div class="row">
+                <!-- Shorts 1 -->
+                <div class="col-sm-2">
+                  <a href="https://youtube.com/shorts/5fK0aStCNY8?si=NkmDZULyEd7YNoc-" style="text-decoration: none;">
+                    <div class="yt-shorts-card mt-2">
+                      <iframe class="w-100" height="350"
+                        src="https://www.youtube.com/embed/5fK0aStCNY8?autoplay=0&mute=1" title="YouTube Shorts video"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                      </iframe>
+                      <div class="d-flex mt-2">
+                        <div>
+                          <h6 class="video-title">Video Content Name and a thumbnail A slight description</h6>
+                          <label class="views-years">No of Views</label>
+                        </div>
+                        <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+
+                <!-- Shorts 2 -->
+                <div class="col-sm-2">
+                  <div class="yt-shorts-card mt-2">
+                    <iframe class="w-100" height="350" src="https://www.youtube.com/embed/MyHSYT6uRYE"
+                      title="YouTube Shorts video" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                    <div class="d-flex mt-2">
+                      <div>
+                        <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                        <label class="views-years">No of Views</label>
+                      </div>
+                      <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Shorts 3 -->
+                <div class="col-sm-2">
+                  <div class="yt-shorts-card mt-2">
+                    <iframe class="w-100" height="350" src="https://www.youtube.com/embed/4wZwXhoxRIA"
+                      title="YouTube Shorts video" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                    <div class="d-flex mt-2">
+                      <div>
+                        <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                        <label class="views-years">No of Views</label>
+                      </div>
+                      <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Shorts video 4 -->
+                <div class="col-sm-2">
+                  <div class="yt-shorts-card mt-2">
+                    <iframe class="w-100" height="350" src="https://www.youtube.com/embed/J0D2HsWEk8Q"
+                      title="YouTube Shorts video" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                    <div class="d-flex mt-2">
+                      <div>
+                        <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                        <label class="views-years">No of Views</label>
+                      </div>
+                      <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Shorts 5 -->
+                <div class="col-sm-2">
+                  <div class="yt-shorts-card mt-2">
+                    <iframe class="w-100" height="350" src="https://www.youtube.com/embed/4wZwXhoxRIA"
+                      title="YouTube Shorts video" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                    <div class="d-flex mt-2">
+                      <div>
+                        <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                        <label class="views-years">No of Views</label>
+                      </div>
+                      <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Shorts 5 -->
+                <div class="col-sm-2">
+                  <div class="yt-shorts-card mt-2">
+                    <iframe class="w-100" height="350" src="https://www.youtube.com/embed/UfnAs9Ap_lM"
+                      title="YouTube Shorts video" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen>
+                    </iframe>
+                    <div class="d-flex mt-2">
+                      <div>
+                        <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                        <label class="views-years">No of Views</label>
+                      </div>
+                      <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Second Video area -->
+            <div class="yt-video-area">
+              <div class="container">
+                <div class="row">
+                  <!-- Video 1 -->
+                  <div class="col-md-4">
+                    <div class="yt-video-card mt-2">
+                      <iframe class="w-100" height="210"
+                        src="https://www.youtube.com/embed/Up9otLfXMeg?si=qdBOviehu_IQ0pZJ" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                      </iframe>
+                      <div class="d-flex mt-2">
+                        <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                        <div>
+                          <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                          <p class="channel-name">Channel Name</p>
+                          <label class="views-years">No of Views</label>.<label class="views-years">No years ago</label>
+                        </div>
+                        <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Video 2 -->
+                  <div class="col-md-4">
+                    <div class="yt-video-card mt-2">
+                      <iframe class="w-100" height="210"
+                        src="https://www.youtube.com/embed/JxgmHe2NyeY?si=gSV3gD-0AiJ7p0V7" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                      </iframe>
+                      <div class="d-flex mt-2">
+                        <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                        <div>
+                          <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                          <p class="channel-name">Channel Name</p>
+                          <label class="views-years">No of Views</label>.<label class="views-years">No years ago</label>
+                        </div>
+                        <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Video 3 -->
+                  <div class="col-md-4">
+                    <div class="yt-video-card mt-2">
+                      <iframe class="w-100" height="210"
+                        src="https://www.youtube.com/embed/jul2urONzOQ?si=0lsS2SSWav0wN8XY" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                      </iframe>
+                      <div class="d-flex mt-2">
+                        <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                        <div>
+                          <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                          <p class="channel-name">Channel Name</p>
+                          <label class="views-years">No of Views</label>.<label class="views-years">No years ago</label>
+                        </div>
+                        <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Second shorts area -->
+              <div class="yt-shorts-area">
+                <div class="container">
+                  <div class="shortsicon">
+                    <img src="images\shorts_icon.png" alt="" height="55">
+                  </div>
+                  <div class="row">
+                    <!-- Shorts 1 -->
+                    <div class="col-sm-2">
+                      <div class="yt-shorts-card mt-2">
+                        <iframe class="w-100" height="350" src="https://www.youtube.com/embed/S89kWBmz8no"
+                          title="YouTube Shorts video" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen>
+                        </iframe>
+                        <div class="d-flex mt-2">
+                          <div>
+                            <h6 class="video-title">Video Content Name and a thumbnail A slight description</h6>
+                            <label class="views-years">No of Views</label>
+                          </div>
+                          <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Shorts 2 -->
+                    <div class="col-sm-2">
+                      <div class="yt-shorts-card mt-2">
+                        <iframe class="w-100" height="350" src="https://www.youtube.com/embed/QV23OomGQW0"
+                          title="YouTube Shorts video" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen>
+                        </iframe>
+                        <div class="d-flex mt-2">
+                          <div>
+                            <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                            <label class="views-years">No of Views</label>
+                          </div>
+                          <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Shorts 3 -->
+                    <div class="col-sm-2">
+                      <div class="yt-shorts-card mt-2">
+                        <iframe class="w-100" height="350" src="https://www.youtube.com/embed/4wZwXhoxRIA"
+                          title="YouTube Shorts video" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen>
+                        </iframe>
+                        <div class="d-flex mt-2">
+                          <div>
+                            <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                            <label class="views-years">No of Views</label>
+                          </div>
+                          <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Shorts video 4 -->
+                    <div class="col-sm-2">
+                      <div class="yt-shorts-card mt-2">
+                        <iframe class="w-100" height="350" src="https://www.youtube.com/embed/UfnAs9Ap_lM"
+                          title="YouTube Shorts video" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen>
+                        </iframe>
+                        <div class="d-flex mt-2">
+                          <div>
+                            <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                            <label class="views-years">No of Views</label>
+                          </div>
+                          <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Shorts 5 -->
+                    <div class="col-sm-2">
+                      <div class="yt-shorts-card mt-2">
+                        <iframe class="w-100" height="350" src="https://www.youtube.com/embed/7yKdPC83TVg"
+                          title="YouTube Shorts video" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen>
+                        </iframe>
+                        <div class="d-flex mt-2">
+                          <div>
+                            <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                            <label class="views-years">No of Views</label>
+                          </div>
+                          <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Shorts 5 -->
+                    <div class="col-sm-2">
+                      <div class="yt-shorts-card mt-2">
+                        <iframe class="w-100" height="350" src="https://www.youtube.com/embed/GXxjd1za6jk"
+                          title="YouTube Shorts video" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen>
+                        </iframe>
+                        <div class="d-flex mt-2">
+                          <div>
+                            <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                            <label class="views-years">No of Views</label>
+                          </div>
+                          <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Third Video area -->
+                <div class="yt-video-area">
+                  <div class="container">
+                    <div class="row">
+                      <!-- Video 1 -->
+                      <div class="col-md-4">
+                        <div class="yt-video-card mt-2">
+                          <iframe class="w-100" height="210"
+                            src="https://www.youtube.com/embed/_Q1qTiVJd5s?si=AMgnH__wOwiuQ3nR"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                          </iframe>
+                          <div class="d-flex mt-2">
+                            <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                            <div>
+                              <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                              <p class="channel-name">Channel Name</p>
+                              <label class="views-years">No of Views</label>.<label class="views-years">No years
+                                ago</label>
+                            </div>
+                            <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Video 2 -->
+                      <div class="col-md-4">
+                        <div class="yt-video-card mt-2">
+                          <iframe class="w-100" height="210"
+                            src="https://www.youtube.com/embed/n4R2E7O-Ngo?si=7XZeM4MtVmAmsiqr"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                          </iframe>
+                          <div class="d-flex mt-2">
+                            <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                            <div>
+                              <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                              <p class="channel-name">Channel Name</p>
+                              <label class="views-years">No of Views</label>.<label class="views-years">No years
+                                ago</label>
+                            </div>
+                            <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Video 3 -->
+                      <div class="col-md-4">
+                        <div class="yt-video-card mt-2">
+                          <iframe class="w-100" height="210"
+                            src="https://www.youtube.com/embed/8mAITcNt710?si=zoF1vD0M5DCBHT3a"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                          </iframe>
+                          <div class="d-flex mt-2">
+                            <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                            <div>
+                              <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description</h6>
+                              <p class="channel-name">Channel Name</p>
+                              <label class="views-years">No of Views</label>.<label class="views-years">No years
+                                ago</label>
+                            </div>
+                            <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fourth Video area -->
+                  <div class="yt-video-area">
+                    <div class="container">
+                      <div class="row">
+                        <!-- Video 1 -->
+                        <div class="col-md-4">
+                          <div class="yt-video-card mt-2">
+                            <iframe class="w-100" height="210"
+                              src="https://www.youtube.com/embed/kUMe1FH4CHE?si=eWjYifQiThrWKFHn"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <div class="d-flex mt-2">
+                              <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                              <div>
+                                <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description
+                                </h6>
+                                <p class="channel-name">Channel Name</p>
+                                <label class="views-years">No of Views</label>.<label class="views-years">No years
+                                  ago</label>
+                              </div>
+                              <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="col-md-4">
+                          <div class="yt-video-card mt-2">
+                            <iframe class="w-100" height="210"
+                              src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=wRPX36YpgYgv43xM"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <div class="d-flex mt-2">
+                              <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                              <div>
+                                <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description
+                                </h6>
+                                <p class="channel-name">Channel Name</p>
+                                <label class="views-years">No of Views</label>.<label class="views-years">No years
+                                  ago</label>
+                              </div>
+                              <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="col-md-4">
+                          <div class="yt-video-card mt-2">
+                            <iframe class="w-100" height="210"
+                              src="https://www.youtube.com/embed/zJSY8tbf_ys?si=Ahuqx6iKqUjDeUmm"
+                              title="YouTube video player" frameborder="0"
+                              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                            </iframe>
+                            <div class="d-flex mt-2">
+                              <div><button class="btn round-btn"><i class="bx bxs-user"></i></button></div>
+                              <div>
+                                <h6 class="video-title">Video Content Name and a thumbnail <br> A slight description
+                                </h6>
+                                <p class="channel-name">Channel Name</p>
+                                <label class="views-years">No of Views</label>.<label class="views-years">No years
+                                  ago</label>
+                              </div>
+                              <a href="" class="placedots"><i class='bx bx-dots-vertical-rounded'></i></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="loading-bar">
+                  <p>Loading...</p>
+                </div>
+              </div>
+              <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+                integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                crossorigin="anonymous"></script>
+
+              <script>
+                $(function () {
+                  var sidebaropenstatus = true;
+                  $('#sidebarBtn1').click(function (e) {
+                    e.preventDefault();
+
+                    if (sidebaropenstatus) {
+                      $('#ytsidebar').addClass('yt-sidebar-mini')
+                      $('#ytcontentarea').addClass('yt-sidebar-collapsed')
+                    } else {
+                      $('#ytsidebar').removeClass('yt-sidebar-mini')
+                      $('#ytcontentarea').removeClass('yt-sidebar-collapsed')
+                    }
+
+                    sidebaropenstatus = !sidebaropenstatus;
+
+                  });
+                });
+              </script>
+</body>
+
+</html>
